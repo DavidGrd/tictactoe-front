@@ -1,4 +1,5 @@
 import React, { useState, useEffect, useCallback, useRef } from 'react'
+import { couldStartTrivia } from 'typescript';
 import { ChatClient } from './chat-client';
 
 const URL = 'wss://3t0hp0ybrb.execute-api.us-east-1.amazonaws.com/production';
@@ -46,9 +47,6 @@ const App = () => {
 
   useEffect(() => {
     console.log(socket.current,typeof(socket.current))
-  /*  return () => {
-      socket.current.close();
-    };*/
   }, []);
 
   const onSendPrivateMessage = useCallback((to) => {
