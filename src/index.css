@@ -7,8 +7,8 @@
 }
 
 body {
-  background-color: black;
-  color: white;
+  background-color: white;
+  color: black;
   font-family: "Roboto", sans-serif;
   display: flex;
   /* align-items: center; */
@@ -22,8 +22,8 @@ h1 {
 }
 
 .board {
-  border: 1rem solid #ff652f;
-  background: #ff652f;
+  border: 1rem solid #3e103f;
+  background: #3e103f;
   width: 500px;
   height: 500px;
   display: grid;
@@ -32,19 +32,12 @@ h1 {
 }
 
 .squares {
-  background: #272727;
+  background: white;
   border: none;
   font-size: 5rem;
   /* font-weight: 800; */
   cursor: pointer;
   outline: none;
-}
-
-.X {
-  color: red;
-}
-.O {
-  color: green;
 }
 
 .info-wrapper {
